@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb')
-const dbUrl = 'mongodb://7fd36c72c86b:27017'
+const dbUrl = 'mongodb://mongo:27017'
 const client = new MongoClient(dbUrl, { useUnifiedTopology: true })
 const dbName = 'expressDocker'
 
@@ -15,7 +15,7 @@ const seed = async () => {
     ag: 40
   })
 }
-// seed()
+seed()
 
 
 module.exports = db 
